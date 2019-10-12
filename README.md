@@ -1,7 +1,7 @@
 # Introduction to the Finite Element Method
 
 
-![Displacement field in a wrench.](./Notebooks/img/wrench.png)
+![Displacement field in a wrench.](./notebooks/img/wrench.png)
 
 
 ## Introduction.
