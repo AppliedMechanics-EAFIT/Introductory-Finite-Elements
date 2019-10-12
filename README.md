@@ -21,3 +21,37 @@ The course has been designed to be imparted in a **Flipped classroom environment
 
 ## Contents.
 The course contents are those described by the following set of notebooks. **NB-0** covers the basics of Notebooks and provides examples of basic programming skills in Python. **NB-1** through **NB-5** presents standard interpolation and numerical integration techniques but within the context of the finite element method. In particular, **NB-4** applies an intial definition of a finite element to a problem of visualization of functions over two-dimensonal domains. The formulation of the finite element method to the elasticity problem is strictly defined in **NB-8** and following.
+
+[NB-0a: Introductory Notebook](<https://bit.ly/33otk8l>)
+
+[NB-0b: A simple finite element code](<https://bit.ly/2B4AouG>)
+
+[NB-1: One-dimensional Lagrange interpolation-Principles](<https://bit.ly/325LdbX>)
+
+[NB-2: One-dimensional Lagrange interpolation-Nonlocal scheme](<https://bit.ly/2M7QOJh>)
+
+[NB-3: Two-dimensional Lagrange interpolation](<https://bit.ly/2B8wZep>)
+
+[NB-4: Application. Visualization of a solution in a complete domain](<https://bit.ly/3293AN3>)
+
+[NB-5: Numerical integration in the Finite Element Method](<https://bit.ly/2IIaYay>)
+
+[NB-6: Computation of the stiffness matrix](<https://bit.ly/33n3K3J>)
+
+[NB-7: The linearized theory of elasticity](<https://bit.ly/2VA6TdX>)
+
+[NB-8: Finite element formulation of the elasticity BVP](<https://bit.ly/2MDE3oD>)
+
+[NB-9: Assembly of the FEM equlibrium equations](<https://bit.ly/2IISI0E>)
+
+[NB-10: Solution and post-processing](<https://bit.ly/2nBwnea>)
+
+[NB-11: Convergency of the analysis results](<https://bit.ly/35sgO9R>)
+
+[NB-12: Finite element analysis with SolidsPy](<https://bit.ly/31eKHr3>)
+
+[NB-13: Truss elements](<https://bit.ly/329Rpjj>)
+
+[NB-14: Frame elements](<https://bit.ly/35sybHE>)
+
+
