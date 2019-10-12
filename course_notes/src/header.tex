@@ -1,0 +1,101 @@
+\documentclass[12pt, oneside, openany, english]{book}
+\usepackage{babel}
+\usepackage{babelbib}
+\usepackage{etoolbox}
+\usepackage{mathtools}
+\usepackage{amstext, amssymb, amsthm, amsmath, amsbsy}
+\usepackage{tabularx}
+\usepackage{cancel}
+\usepackage[utf8]{inputenc}
+\usepackage{graphicx}
+\usepackage{enumerate}
+\usepackage{caption} % Modify caption format
+\usepackage{subcaption}  %% subfig is deprecated
+\usepackage{float}
+\usepackage{multirow}
+\usepackage{leftidx}
+\usepackage{url}
+\usepackage{hyperref} % Nice details for pdf
+\usepackage{bookmark} % Bookmarks in PDF
+\usepackage[colorinlistoftodos]{todonotes}
+\usepackage{physics} % Extra operators and cool stuff
+%\usepackage{minted}  % Include fancy code
+\usepackage[ruled]{algorithm2e} % Include algorithms
+\usepackage{algorithmic}
+\usepackage{listings} % To include code
+\usepackage{xcolor}
+\usepackage{scalerel}  % To create the assembly operator
+\usepackage{cite}  % Pretty citations
+\usepackage{nicefrac}
+\usepackage{units}
+\usepackage{mdframed}
+\usepackage{tcolorbox}
+\usepackage{cleveref}
+%\usepackage[toc,page]{appendix}
+\usepackage[titletoc]{appendix}
+
+%%%%% Packages setup %%%%%
+
+% For babelbib
+\patchcmd\btxselectlanguage{\csname}{\csname TEMPPATCH}{}{} 
+
+\captionsetup{
+    margin=20pt,
+    font=small,
+    labelfont=bf,
+    labelsep=period
+}
+
+
+\hypersetup{
+	bookmarksopen=true,
+	colorlinks=true,
+	linkcolor=blue,
+	citecolor=blue,
+	urlcolor=black,	
+	linktoc=all,
+	bookmarksopen=false,
+	pdftitle={Finite Element Methods},
+	pdfauthor={J. Gomez, N. Guarin-Zapata},
+	pdfkeywords={Computational Mechanics, Finite Element Methods},
+	pdfsubject={Class Notes},
+	pdfpagemode=UseOutlines,
+	pdfstartview=FitH
+}
+
+
+\definecolor{bg}{rgb}{0.95,0.95,0.95}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% New  commands
+
+
+
+\newcommand{\urlbib}[1]{{\footnotesize{\url{#1}}}} % URL in references
+\newcommand{\fullref}[1]{\ref{#1} at page \pageref{#1}}
+
+% make "C++" look pretty when used in text by touching up the plus signs
+\newcommand{\CPP}
+{C\nolinebreak[4]\hspace{-.05em}\raisebox{.22ex}{\footnotesize\bf ++}}
+
+
+\DeclareMathOperator*{\assem}{\bigwedge} 
+
+%% Example:
+% \[\assem_{k=1}^{n} N_k(x)u_k\]
+
+
+%%--- Math commands ---
+
+
+% Integrals
+\newcommand{\intL}{\int\limits}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Tweaks
+
+\setlength{\parskip}{0.5cm}
+
+\crefname{algocf}{alg.}{algs.}
+\Crefname{algocf}{Algorithm}{Algorithms}

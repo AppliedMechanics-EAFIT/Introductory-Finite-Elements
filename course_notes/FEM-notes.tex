@@ -1,0 +1,47 @@
+\include{src/header}
+
+\begin{document}
+
+%\usemintedstyle{trac}
+
+%%%%%%%%%% Cover %%%%%%%%%%
+\include{src/cover}
+
+\frontmatter
+
+% Table of contents
+\pdfbookmark[0]{Table of contents}{Table of contents}
+\tableofcontents
+
+
+
+%\listoftodos
+
+\mainmatter
+
+%%%%%%%%%% Introduction %%%%%%%%%%
+\include{src/summary}
+\include{src/intro}
+\include{src/interpolation}
+\include{src/quadratures}
+\include{src/bvp}
+\include{src/computational}
+%\include{src/appendix}
+%\include{src/wavestime}
+
+
+%\include{src/elem_matrices}
+
+%%%%%% References %%%%%%%%%%
+\nocite{gmsh2009}
+
+\include{src/references}
+
+\begin{appendices}
+	\appendixpage
+	\noappendicestocpagenum
+	\addappheadtotoc
+	\include{src/appendix}
+\end{appendices}
+
+\end{document}
