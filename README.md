@@ -55,3 +55,36 @@ The follosing is the list of notebooks/lessons:
 * [13: Truss elements](https://nbviewer.jupyter.org/github/jgomezc1/Introductory-Finite-Elements/blob/master/notebooks/13_truss_elements.ipynb)
 
 * [14: Frame elements](https://nbviewer.jupyter.org/github/jgomezc1/Introductory-Finite-Elements/blob/master/notebooks/14_frame_elements.ipynb)
+
+
+## Installation Instructions
+
+We encourage you to use ``conda`` to install the required packages for
+this tutorial.
+
+Note also that the material is written for Python 3.6. No guarantees of any
+kind are made that it will be compatible with Python 2.
+
+Create a conda environment using the file ``environment.yml`` in the root
+of the repository using
+
+```console
+conda env create -f environment.yml
+```
+
+This will create a conda environment named `intro_fem` with all of the
+required packages.
+
+You can activate the environment with
+
+```console
+conda activate intro_fem
+```
+
+## License
+All code is under MIT license and media under Creative Commons Attribute.
+
+The content of this repository is licensed under the
+[Creative Commons Attribution 4.0 license](http://choosealicense.com/licenses/cc-by-4.0/),
+and the source code that accompany the content is licensed under the
+[MIT license](https://opensource.org/licenses/mit-license.php).
