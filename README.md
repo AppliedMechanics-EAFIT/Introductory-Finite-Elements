@@ -1,5 +1,7 @@
 # Introduction to the Finite Element Method
 
+[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/jgomezc1/Introductory-Finite-Elements/master)
+
 ![Displacement field in a wrench.](./notebooks/img/wrench.png)
 
 ## Introduction

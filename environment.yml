@@ -1,0 +1,16 @@
+name: intro_fem
+channels:
+  - default
+dependencies:
+  - python>=3.6
+  - numpy
+  - scipy
+  - matplotlib>=2.0
+  - sympy
+  - jupyter
+  - ipython
+  - spyder
+  - ipykernel
+  - pip:
+    - meshio
+    - solidspy
