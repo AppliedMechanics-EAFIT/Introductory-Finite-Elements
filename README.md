@@ -22,7 +22,7 @@ The course contents are those described by the following set of notebooks. **NB-
 
 List of lessons/notebooks:
 
-* [00a: Introductory Notebook](https://nbviewer.jupyter.org/github/jgomezc1/Introductory-Finite-Elements/blob/master/notebooks/00_introductory.ipynb)
+* [00a: Introductory Notebook](https://nbviewer.jupyter.org/github/jgomezc1/Introductory-Finite-Elements/blob/master/notebooks/00a_introductory.ipynb)
 
 * [00b: A simple finite element code](https://nbviewer.jupyter.org/github/jgomezc1/Introductory-Finite-Elements/blob/master/notebooks/00b_springs.ipynb)
 
@@ -46,7 +46,7 @@ List of lessons/notebooks:
 
 * [10: Solution and post-processing](https://nbviewer.jupyter.org/github/jgomezc1/Introductory-Finite-Elements/blob/master/notebooks/10_solution_and_postprocess.ipynb)
 
-* [11: Convergency of the analysis results](https://nbviewer.jupyter.org/github/jgomezc1/Introductory-Finite-Elements/blob/master/notebooks/11_convergence.ipynb)
+* [11: Convergence analysis of the results](https://nbviewer.jupyter.org/github/jgomezc1/Introductory-Finite-Elements/blob/master/notebooks/11_convergence.ipynb)
 
 * [12: Finite element analysis with SolidsPy](https://nbviewer.jupyter.org/github/jgomezc1/Introductory-Finite-Elements/blob/master/notebooks/12_solidspy.ipynb)
 
