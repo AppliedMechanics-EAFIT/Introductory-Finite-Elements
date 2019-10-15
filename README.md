@@ -18,11 +18,11 @@ The course has been designed to be imparted in a [flipped classroom environment]
 
 ## Contents
 
-The course contents are those described by the following set of notebooks. **NB-0** covers the basics of Notebooks and provides examples of basic programming skills in Python. **NB-1** through **NB-5** presents standard interpolation and numerical integration techniques but within the context of the finite element method. In particular, **NB-4** applies an initial definition of a finite element to a problem of visualization of functions over two-dimensional domains. The formulation of the finite element method to the elasticity problem is defined in **NB-8** and following.
+The course is divided into lessons/notebooks, as described following. NB-00 covers the basics of Notebooks and provides examples of basic programming skills in Python. NB-01 through NB-05 presents standard interpolation and numerical integration techniques but within the context of the finite element method. In particular, NB-04 applies an initial definition of a finite element to a problem of visualization of functions over two-dimensional domains. The formulation of the finite element method to the elasticity problem is defined in NB-08 and following.
 
-List of lessons/notebooks:
+The follosing is the list of notebooks/lessons:
 
-* [00a: Introductory Notebook](https://nbviewer.jupyter.org/github/jgomezc1/Introductory-Finite-Elements/blob/master/notebooks/00a_introductory.ipynb)
+* [00a: Introductory Notebook](https://nbviewer.jupyter.org/github/jgomezc1/Introductory-Finite-Elements/blob/master/notebooks/00a_introductory_notebook.ipynb)
 
 * [00b: A simple finite element code](https://nbviewer.jupyter.org/github/jgomezc1/Introductory-Finite-Elements/blob/master/notebooks/00b_springs.ipynb)
 
