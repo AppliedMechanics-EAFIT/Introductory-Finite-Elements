@@ -11,10 +11,13 @@ In the formulation of finite element methods it is customary to start from expre
 
 and then proceed to introduce discretization or approximations via interpolation theory. In this case it is useful to combine index notation to describe the physical tensorial fields and at the same time the superposition implicit in interpolation schemes. In this appendix we clarify the use of such combined index notation.
 
-\subsection{Indicial notation of cartesian tensor fields}
+\subsection{Index notation of Cartesian tensor fields}
 
-In indicial notation vector and tensor fields are represented by a letter defining the name of the field and a set of different subscripts (or indices). The number of different indices associated to the letter indicates whether the field is a vector (1 index), a second order tensor (2 indices), a third order tensor (3 indices) as in:
-
+In index notation vector and tensor fields are represented by a letter defining 
+the name of the field and a set of different subscripts (or index). The 
+number of different indices associated to the letter indicates whether the 
+field is a vector (1 index), a second order tensor (2 indices), a third order 
+tensor (3 indices) as in:
 \[u_i , \sigma_{ij} , C_{ijk}\]
 
 and further clarified next.
@@ -362,11 +365,12 @@ the variational equation reads
 from which
 \[\pdv{\Pi}{u^Q} = 0\, .\]
 
-\paragraph*{Example: The generalized parabolic equation.}
+\paragraph*{Example: The generalized parabolic equation}
 Let us consider the case of the generalized parabolic equation and its discretization following the Galerkin method
 \[\rho(\vb x) \pdv{u(\vb x,t)}{t} + \mathcal{L}u(\vb x, t) = 0\]
-which can also be written using indicial notation
-\[\pdv{x_i}\left[{p(x)\pdv{u}{x_i} \right] + q(x)u + \rho \pdv{u}{t} = \rho F.\]
+which can also be written using index notation
+\[\pdv{x_i}\left[p(x)\pdv{u}{x_i} \right] + q(x)u + \rho \pdv{u}{t} = \rho F\, 
+,.\]
 
 Assuming that $p(x)=1$ yields
 \begin{align*}
@@ -435,7 +439,7 @@ thus
 In the Galerkin scheme we use the trial function as weighting function.
 \[R_i \equiv L_{ij}(N_j^Q) u^Q + f_i\]
 and we state
-\[&\int\limits_V N_i^P R_i \dd{V} = 0 \qquad P=1,2,\cdots N\, .\]
+\[\int\limits_V N_i^P R_i \dd{V} = 0 \qquad P=1,2,\cdots N\, .\]
 
 Thus
 \begin{align*}
@@ -452,10 +456,8 @@ which can be written like
 where
 \[K^{PQ} = (\lambda  + \mu )\int\limits_V N_{i,j}^P N_{j,i}^Q \dd{V}  + \mu \int\limits_V N_{i,k}^P N_{i,k}^Q\dd{V} \]
 and
-\[F^P = \int\limits_S N_i^P t_i^{(\hat n)} \dd{S} + \int\limits_V N_i^P f_i \dd{V} = 0 \, .\]
-
-\newpage
-
+\[F^P = \int\limits_S N_i^P t_i^{(\hat n)} \dd{S} + \int\limits_V N_i^P f_i 
+\dd{V} = 0 \, .\]
 
 
 
@@ -673,10 +675,16 @@ and
 %    print("Gauss quadrature: {:.6f}".format(gauss_inte))
 %\end{minted}
 
-
 \newpage
-\chapter{Convergency analysis}
-In this section we address the problem of convergency of analysis results. We will approach the problem in a loose way proceeding from an engineering point of view. For a thorough discussion the reader is referred to textbooks of numerical analysis, see for instance \citep{abaqus1989karlsson}. Particularly we will review the fundamental aspects that must be satisfied by a finite element solution. In the first part we address the problem from the element point of view, while in the final part we study the convergence of particular problem in terms of several self-contained meshes.
+\chapter{Convergence analysis}
+In this section we address the problem of convergence of analysis results. We 
+will approach the problem in a loose way proceeding from an engineering point 
+of view. For a thorough discussion the reader is referred to textbooks of 
+numerical analysis, see for instance \cite{abaqus1989karlsson}. Particularly, 
+we will review the fundamental aspects that must be satisfied by a finite 
+element solution. In the first part we address the problem from the element 
+point of view, while in the final part we study the convergence of particular 
+problem in terms of several self-contained meshes.
 
 \section{¿What is meant by convergence?}
 Mathematical convergence of order $p$ and rate $c$ for a series of numerically computed values $\vec u_{k}$ and for a problem with exact solution $\vec u$ is defined like:
@@ -701,9 +709,21 @@ In order to guarantee that a finite element solution convergences to the exact (
 From a physical point of view we may expect the following behaviour from the individual elements in a given discretization:
 
 \begin{itemize}
-\item[•] Under a rigid body compatible displacement field the element must predicts a zero strain field ${\varepsilon _{ij}} = 0.$ This condition is required in order to mantain actual regions of the domain which are submitted to rigid body modes in a stress free condition. 
-\item[•] The element must be able to predict constant strain states as its size decreases. This condition guarantees that as the element size decreaes it also appoaches the condition of an actual material point.
-\item[•] The work from the surface tractions along the element interfaces must vanish. This is nothing but Newton's third law in terms of surace tractions. The fact that the first order derivatives of the shape functions (equivalent to surface tractions) are discontinous along the element boundaries results in finite jumps in the boundary tractions. The element must be such that these jumps vanish as the element size decreases.   
+\item[•] Under a rigid body compatible displacement field the element must 
+predicts a zero strain field ${\varepsilon _{ij}} = 0.$ This condition is 
+required in order to maintain actual regions of the domain which are submitted 
+to rigid body modes in a stress free condition.
+
+\item[•] The element must be able to predict constant strain states as its size 
+decreases. This condition guarantees that as the element size decreases it also 
+approaches the condition of an actual material point.
+
+\item[•] The work from the surface tractions along the element interfaces must 
+vanish. This is nothing but Newton's third law in terms of surface tractions. 
+The fact that the first order derivatives of the shape functions (equivalent to 
+surface tractions) are discontinuous along the element boundaries results in 
+finite jumps in the boundary tractions. The element must be such that these 
+jumps vanish as the element size decreases.   
 \end{itemize}
 
 In terms of the shape functions these three conditions are equivalent to:
@@ -963,19 +983,14 @@ The analysis results are reported in \cref{ejemplo}.
 %%%%%%
 
 
-
-
 \begin{center}
-\begin{tabular}{ |c|c|c|c| }
+\begin{tabular}{cccc}
   \hline
   $h$ & ${\Pi _{FE}}$ & $\left\| {{{\vec u}_{Exa}} - {{\vec u}_{FE}}} \right\|$ & $\frac{{\left\| {{{\vec u}_{Exa}} - {{\vec u}_{FE}}} \right\|}}{{\left\| {{{\vec u}_{Exa}}} \right\|}}$ \\
   \hline 
   $1.0$      & $-1.151$ & $0.095$  & $0.088$  \\
-  \hline
    $0.5$     & $-1.155$ & $0.071$  & $0.066$  \\
-  \hline
    $0.25$    & $-1.161$ & $0.032$  & $0.030$  \\
-  \hline
    $ 0.125$  & $-1.160$ & $0.001$  & $0.001$  \\
   \hline
 \end{tabular}
@@ -984,14 +999,12 @@ The analysis results are reported in \cref{ejemplo}.
 \end{center}
 
 To measure convergence we plot:
-
-\[\log \left( {\left\| {{{\vec u}_{Exa}} - {{\vec u}_{FE}}} \right\|} \right) = \log c + k\log h\]
-
+\[\log \left( {\left\| {{{\vec u}_{Exa}} - {{\vec u}_{FE}}} \right\|} \right) = 
+\log c + k\log h\]
 leading to \cref{fig:conv} from which  $k \approx 1.14.$
-
 \begin{figure}[H]
 \centering
-\subfloat{\includegraphics[width=0.65\textwidth]{img/conver.pdf}}
+\includegraphics[width=0.65\textwidth]{img/conver.pdf}
 \caption{Energy norm of the error}
 \label{fig:conv}
 \end{figure}
@@ -1004,30 +1017,29 @@ Consider the cantilever beam shown in \cref{fig:viga}
 
 \begin{figure}[H]
 \centering
-\subfloat{\includegraphics[width=0.75\textwidth]{img/beam.pdf}}
+\includegraphics[width=0.75\textwidth]{img/beam.pdf}
 \caption{Cantelever beam.}
 \label{fig:viga}
 \end{figure}
-
 with analytic solution \citep{book:timoshenko} given by:
+\begin{align*}
+u &=  -\frac{P}{2EI} x^2 y - \frac{\nu P}{6EI} y^3 + \frac{P}{2IG}{y^3} + 
+\left(\frac{P l^2}{2EI} - \frac{P c^2}{2IG}\right)y \, ,\\
+v &= \frac{\nu P}{2EI} x y^2 + \frac{P}{6EI} x^3 - 
+\frac{Pl^2}{2EI}x + \frac{Pl^3}{3EI}\, ,\\
+\varepsilon_{xx} &= \pdv{u}{x} \equiv - \frac{P}{EI}xy\, ,\\
+\varepsilon_{yy} &= \pdv{v}{y} \equiv \frac{\nu P}{EI} xy\, ,\\
+\gamma_{xy} &= \pdv{u}{y} + \pdv{v}{x} \equiv \frac{P}{2IG} (y^2 - c^2)\, .
+\end{align*}
 
-\[u =  - \frac{P}{{2EI}}{x^2}y - \frac{{\nu P}}{{6EI}}{y^3} + \frac{P}{{2IG}}{y^3} + \left( {\frac{{P{l^2}}}{{2EI}} - \frac{{P{c^2}}}{{2IG}}} \right)y\]
-
-\[v = \frac{{\nu P}}{{2EI}}x{y^2} + \frac{P}{{6EI}}{x^3} - \frac{{P{l^2}}}{{2EI}}x + \frac{{P{l^3}}}{{3EI}}\]
-
-\[{\varepsilon _{xx}} = \frac{{\partial u}}{{\partial x}} \equiv  - \frac{P}{{EI}}xy\]
-
-\[{\varepsilon _{yy}} = \frac{{\partial v}}{{\partial y}} \equiv \frac{{\nu P}}{{EI}}xy\]
-
-\[{\gamma _{xy}} = \frac{{\partial u}}{{\partial y}} + \frac{{\partial v}}{{\partial x}} \equiv \frac{P}{{2IG}}\left( {{y^2} - {c^2}} \right).\]
-
-The horizontal and vertical displacement field corresponding to the particular values of $E=1000.0$, $\nu=0.30$ for the material parameters; $l=24$ and $2c=8$ for the geometry and $P=50$ (upwards) for the load is shwon below:
-
+The horizontal and vertical displacement field corresponding to the particular 
+values of $E=1000.0$, $\nu=0.30$ for the material parameters; $l=24$ and $2c=8$ 
+for the geometry and $P=50$ (upwards) for the load is shown below:
 \begin{figure}[H]
 \centering
-\subfloat{\includegraphics[width=0.75\textwidth]{img/anahorizo.pdf}}//
-\subfloat{\includegraphics[width=0.75\textwidth]{img/anavertic.pdf}}
-\caption{Horizontal field.}
+\includegraphics[width=0.75\textwidth]{img/anahorizo.pdf}\\
+\includegraphics[width=0.75\textwidth]{img/anavertic.pdf}
+\caption{Displacement field for the cantilever beam.}
 \label{fig:ecuacion}
 \end{figure}
 
@@ -1036,20 +1048,18 @@ Perform a finite element simulation using a series of refined meshes with charat
 
 
 \begin{center}
-\begin{tabular}{ |c|c|c|c| }
-  \hline
-  $h$ & ${\prod _{FE}}$ & $\left\| {{{\vec u}_{Exa}} - {{\vec u}_{FE}}} \right\|$ & $\frac{{\left\| {{{\vec u}_{Exa}} - {{\vec u}_{FE}}} \right\|}}{{\left\| {{{\vec u}_{Exa}}} \right\|}}$ \\
-  \hline 
-  $6.0$  & $$ & $$  & $$  \\
-  \hline
-   $3.0$  & $$ & $$  & $$  \\
-  \hline
-   $1.5$  & $$ & $$  & $$  \\
-  \hline
-   $ 0.75$  & $$ & $$  & $$  \\
-  \hline
-  $ 0.375$  & $$ & $$  & $$  \\
-  \hline
+\begin{tabular}{cccc}
+\hline
+$h$ & $\prod_{FE}$ & $\left\| \vec{u}_{Exa} - \vec{u}_{FE}\right\|$ 
+& $\frac{\left\| \vec{u}_{Exa} - \vec{u}_{FE}\right\|}{\left\| 
+\vec{u}_{Exa} \right\|}$ \\
+\hline 
+$6.0$  & $$ & $$  & $$  \\
+$3.0$  & $$ & $$  & $$  \\
+$1.5$  & $$ & $$  & $$  \\
+$ 0.75$  & $$ & $$  & $$  \\
+$ 0.375$  & $$ & $$  & $$  \\
+\hline
 \end{tabular}
 \captionof{table}{Convergence of anlysis results}
 \label{problem}

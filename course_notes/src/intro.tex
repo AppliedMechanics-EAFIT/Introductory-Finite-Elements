@@ -2,9 +2,46 @@
 
 \chapter{Introduction}
 
-This set of lecture notes for the course {\bf Introduction to the Finite Element Method} is part of the learning resources used in the flipped class version of the subject adopted at Universidad EAFIT. In the flipped-class approach the students cover most of the theoretical aspects through independent home study, while the class time is invested in various learning activities conducted with support from the instructor and strongly based on peer-to-peer interaction. In this context, by collecting and summarizing fundamental numerical, theoretical and computational aspects required in the formulation of finite element algorithms, the lecture notes are intended to serve as a self-study guide . The notes are not as rigorous as material existing in published literature and are certainly not close in quality to excellent textbooks available in the subject. 
+This set of lecture notes for the course {\bf Introduction to the Finite 
+Element Method} is part of the learning resources used in the flipped 
+classroom\footnote{``Inverting the classroom means that events that have 
+traditionally taken place inside the classroom now take place outside the 
+classroom and vice versa.'' \citep{lage2000}.} version of the subject 
+adopted at Universidad EAFIT. In the flipped class approach, the students cover 
+most of the theoretical aspects through independent home study, while the class 
+time is invested in various learning activities conducted with support from the 
+instructor and strongly based on peer-to-peer interaction. In this context, by 
+collecting and summarizing fundamental numerical, theoretical and computational 
+aspects required in the formulation of finite element algorithms, the lecture 
+notes are intended to serve as a self-study guide. The notes are not as 
+rigorous as material existing in published literature and are certainly not 
+close in quality to excellent textbooks available in the subject.
 
-This introductory version of the course covers fundamental theoretical and computational aspects, required in the formulation of finite element methods as a numerical solution technique of boundary value problems. Although the studied algorithms are general the course evolves around the model of the linearized theory of elasticity. The fundamental theoretical framework is mainly covered in the lecture notes and in some referenced complementary material. The various theoretical topics are then associated to in-class learning activities involving some degree of computational work. Most of these activities are given in the form of Jupyter Notebooks.\footnote{Jupyter notebooks are open-source web applications used to create and share documents that contain live code, equations, visualizations and narrative text.}  In addition to the lecture notes and notebooks the authors have also developed {\bf SolidsPy}\footnote{https://github.com/AppliedMechanics-EAFIT/SolidsPy} a which is a complete Python-based finite element code to conduct stress analysis over arbitrary two-dimensional elastic domains. The code, which follows a modular structure facilitates the realization of learning activities in the form of (i) full stress analysis simulations (ii) implementation of intermediate steps aimed at covering the various steps in the FE algorithm and (iii) extensions to incorporate additional kinematical models. In the rest of this introductory chapter we present a simple problem of a mechanical spring-mass system which resembles the final form of a finite element algorithm and which serves to justify why we cover the material in the specific order proposed  here. Then we describe the topics covered in the notes and in the final part we indicate how to use the material.
+This introductory version of the course covers fundamental theoretical and 
+computational aspects required in the formulation of finite element methods as 
+a numerical solution technique of boundary value problems. Although the studied 
+algorithms are general the course evolves around the model of the linearized 
+theory of elasticity. The fundamental theoretical framework is mainly covered 
+in the lecture notes and some referenced complementary material. The various 
+theoretical topics are then associated with in-class learning activities 
+involving some degree of computational work. Most of these activities are given 
+in the form of Jupyter Notebooks.\footnote{Jupyter notebooks are open-source 
+web applications used to create and share documents that contain live code, 
+equations, visualizations, and narrative text.} In addition to the lecture 
+notes and notebooks, the authors have also developed {\bf 
+SolidsPy}\footnote{Check the documentation in 
+\url{https://solidspy.readthedocs.io} \cite{solidspy}.} which 
+is a complete Python-based finite element code to conduct stress analysis over 
+arbitrary two-dimensional elastic domains. The code, which follows a modular 
+structure facilitates the realization of learning activities in the form of (i) 
+full stress analysis simulations (ii) implementation of intermediate steps 
+aimed at covering the various steps in the FE algorithm and (iii) extensions to 
+incorporate additional kinematic models. In the rest of this introductory 
+chapter, we present a simple problem of a mechanical spring-mass system that 
+resembles the final form of a finite element algorithm and which serves to 
+justify why we cover the material in the specific order proposed here. Then we 
+describe the topics covered in the notes and in the final part we indicate how 
+to use the material.
 
 \section*{Introductory problem}
 \subsection*{A simple discrete system}
@@ -12,7 +49,9 @@ The simple case of a mechanical spring-mass system considered next resembles mos
 
 The system consists of an assemblage of masses joined by different springs submitted to time varying loads. For later purposes it is convenient to associate a spring with the concept of a finite element and a mass with a nodal point in a finite element algorithm.
 
-The system may be like the one shown in \cref{fig:bathe} where the masses are represented by "cars" connected by springs (or finite elements) of different stiffness coefficients.
+The system may be like the one shown in \cref{fig:bathe} where the masses are 
+represented by ``cars'' connected by springs (or finite elements) of different 
+stiffness coefficients.
 
 \begin{figure}[h]
 \centering
@@ -196,13 +235,21 @@ The course is divided in three parts as follows:
 
 \item Part 2 presents the boundary value problem corresponding to the model of the linearized theory of elasticity and in particular its description through formulations which are suitable for a solution in terms of finite elements algorithms. The boundary value problem is covered in notebook 7.
 
-\item Part 3 concentrates on the formulation of the elasticity boundary value problem in a finite element algorithm. The algorithm and several related aspects are covered in notebooks 8 through 11, while notebook 12 contains a brief reference to the course finite element code SoildsPy.
+\item Part 3 concentrates on the formulation of the elasticity boundary value 
+problem in a finite element algorithm. The algorithm and several related 
+aspects are covered in notebooks 8 through 11, while notebook 12 contains a 
+brief reference to the course finite element code SolidsPy.
 \end{itemize}
 
 The main set of accompanying notebooks also includes NB-0 which makes an introduction to the use of notebooks and a quick reference to data flow structures in Python. The set of lecture notes also include an appendix section presenting some more mathematical aspects of the method and additional tools that may result useful depending on the student's abilities.
 
 
-\paragraph*{How to follow the course?\footnote{{\bf This set of lecture notes and additional course material has been developed as part of the sabatical period of the first author and with the collaboration of the second author Nicolas Guarin-Zapata. The development of the notebooks and design of the learning activities in these notebooks has been developed thanks to the advisory of Camilo Vieira.}}}
+\paragraph*{How to follow the course?\footnote{This set of lecture notes and 
+additional course material has been developed as part of the sabatical period 
+of the first author and with the collaboration of the second author Nicolas 
+Guarin-Zapata. The development of the notebooks and design of the learning 
+activities in these notebooks has been developed thanks to the advisory of 
+Camilo Vieira.}}
 
 The course and its different resources have been created to be used in a flipped class environment or as a self study material. In the formal course, as thought in the graduate program at Universidad EAFIT, it is recommended to follow the proposed sequence of activities starting with the section covering numerical methods as described previously.This same sequence is also recommended for independent learners with no previous knowledge on fundamental numerical methods like interpolation theory and numerical integration. More advanced students, with previous backgrounds on mathematical analysis and numerical methods can test their actual abilities by developing the activities proposed on NB-4 and NB-6 and then moving directly into Chapter 4 discussing the boundary value problem.
 
