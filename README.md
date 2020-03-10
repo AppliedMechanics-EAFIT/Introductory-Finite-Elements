@@ -1,6 +1,6 @@
 # Introduction to the Finite Element Method
 
-[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/jgomezc1/Introductory-Finite-Elements/master)
+[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/AppliedMechanics-EAFIT/Introductory-Finite-Elements/master)
 
 ![Displacement field in a wrench.](./notebooks/img/wrench.png)
 
@@ -24,37 +24,37 @@ The course is divided into lessons/notebooks, as described following. NB-00 cove
 
 The follosing is the list of notebooks/lessons:
 
-* [00a: Introductory Notebook](https://nbviewer.jupyter.org/github/jgomezc1/Introductory-Finite-Elements/blob/master/notebooks/00a_introductory_notebook.ipynb)
+* [00a: Introductory Notebook](https://nbviewer.jupyter.org/github/AppliedMechanics-EAFIT/Introductory-Finite-Elements/blob/master/notebooks/00a_introductory_notebook.ipynb)
 
-* [00b: A simple finite element code](https://nbviewer.jupyter.org/github/jgomezc1/Introductory-Finite-Elements/blob/master/notebooks/00b_springs.ipynb)
+* [00b: A simple finite element code](https://nbviewer.jupyter.org/github/AppliedMechanics-EAFIT/Introductory-Finite-Elements/blob/master/notebooks/00b_springs.ipynb)
 
-* [01: One-dimensional Lagrange interpolation-Principles](https://nbviewer.jupyter.org/github/jgomezc1/Introductory-Finite-Elements/blob/master/notebooks/01_lagrange_1d_principles.ipynb)
+* [01: One-dimensional Lagrange interpolation-Principles](https://nbviewer.jupyter.org/github/AppliedMechanics-EAFIT/Introductory-Finite-Elements/blob/master/notebooks/01_lagrange_1d_principles.ipynb)
 
-* [02: One-dimensional Lagrange interpolation-Nonlocal scheme](https://nbviewer.jupyter.org/github/jgomezc1/Introductory-Finite-Elements/blob/master/notebooks/02_lagrange_1d_nonlocal.ipynb)
+* [02: One-dimensional Lagrange interpolation-Nonlocal scheme](https://nbviewer.jupyter.org/github/AppliedMechanics-EAFIT/Introductory-Finite-Elements/blob/master/notebooks/02_lagrange_1d_nonlocal.ipynb)
 
-* [03: Two-dimensional Lagrange interpolation](https://nbviewer.jupyter.org/github/jgomezc1/Introductory-Finite-Elements/blob/master/notebooks/03_lagrange_2d.ipynb)
+* [03: Two-dimensional Lagrange interpolation](https://nbviewer.jupyter.org/github/AppliedMechanics-EAFIT/Introductory-Finite-Elements/blob/master/notebooks/03_lagrange_2d.ipynb)
 
-* [04: Application. Visualization of a solution in a complete domain](https://nbviewer.jupyter.org/github/jgomezc1/Introductory-Finite-Elements/blob/master/notebooks/04_lagrange_full.ipynb)
+* [04: Application. Visualization of a solution in a complete domain](https://nbviewer.jupyter.org/github/AppliedMechanics-EAFIT/Introductory-Finite-Elements/blob/master/notebooks/04_lagrange_full.ipynb)
 
-* [05: Numerical integration in the Finite Element Method](https://nbviewer.jupyter.org/github/jgomezc1/Introductory-Finite-Elements/blob/master/notebooks/05_integration.ipynb)
+* [05: Numerical integration in the Finite Element Method](https://nbviewer.jupyter.org/github/AppliedMechanics-EAFIT/Introductory-Finite-Elements/blob/master/notebooks/05_integration.ipynb)
 
-* [06: Computation of the stiffness matrix](https://nbviewer.jupyter.org/github/jgomezc1/Introductory-Finite-Elements/blob/master/notebooks/06_stiffness_matriz.ipynb)
+* [06: Computation of the stiffness matrix](https://nbviewer.jupyter.org/github/AppliedMechanics-EAFIT/Introductory-Finite-Elements/blob/master/notebooks/06_stiffness_matriz.ipynb)
 
-* [07: The linearized theory of elasticity](https://nbviewer.jupyter.org/github/jgomezc1/Introductory-Finite-Elements/blob/master/notebooks/07_elasticity.ipynb)
+* [07: The linearized theory of elasticity](https://nbviewer.jupyter.org/github/AppliedMechanics-EAFIT/Introductory-Finite-Elements/blob/master/notebooks/07_elasticity.ipynb)
 
-* [08: Finite element formulation of the elasticity BVP](https://nbviewer.jupyter.org/github/jgomezc1/Introductory-Finite-Elements/blob/master/notebooks/08_fem_bvp_formulation.ipynb)
+* [08: Finite element formulation of the elasticity BVP](https://nbviewer.jupyter.org/github/AppliedMechanics-EAFIT/Introductory-Finite-Elements/blob/master/notebooks/08_fem_bvp_formulation.ipynb)
 
-* [09: Assembly of the FEM equlibrium equations](https://nbviewer.jupyter.org/github/jgomezc1/Introductory-Finite-Elements/blob/master/notebooks/09_assembly.ipynb)
+* [09: Assembly of the FEM equlibrium equations](https://nbviewer.jupyter.org/github/AppliedMechanics-EAFIT/Introductory-Finite-Elements/blob/master/notebooks/09_assembly.ipynb)
 
-* [10: Solution and post-processing](https://nbviewer.jupyter.org/github/jgomezc1/Introductory-Finite-Elements/blob/master/notebooks/10_solution_and_postprocess.ipynb)
+* [10: Solution and post-processing](https://nbviewer.jupyter.org/github/AppliedMechanics-EAFIT/Introductory-Finite-Elements/blob/master/notebooks/10_solution_and_postprocess.ipynb)
 
-* [11: Convergence analysis of the results](https://nbviewer.jupyter.org/github/jgomezc1/Introductory-Finite-Elements/blob/master/notebooks/11_convergence.ipynb)
+* [11: Convergence analysis of the results](https://nbviewer.jupyter.org/github/AppliedMechanics-EAFIT/Introductory-Finite-Elements/blob/master/notebooks/11_convergence.ipynb)
 
-* [12: Finite element analysis with SolidsPy](https://nbviewer.jupyter.org/github/jgomezc1/Introductory-Finite-Elements/blob/master/notebooks/12_solidspy.ipynb)
+* [12: Finite element analysis with SolidsPy](https://nbviewer.jupyter.org/github/AppliedMechanics-EAFIT/Introductory-Finite-Elements/blob/master/notebooks/12_solidspy.ipynb)
 
-* [13: Truss elements](https://nbviewer.jupyter.org/github/jgomezc1/Introductory-Finite-Elements/blob/master/notebooks/13_truss_elements.ipynb)
+* [13: Truss elements](https://nbviewer.jupyter.org/github/AppliedMechanics-EAFIT/Introductory-Finite-Elements/blob/master/notebooks/13_truss_elements.ipynb)
 
-* [14: Frame elements](https://nbviewer.jupyter.org/github/jgomezc1/Introductory-Finite-Elements/blob/master/notebooks/14_frame_elements.ipynb)
+* [14: Frame elements](https://nbviewer.jupyter.org/github/AppliedMechanics-EAFIT/Introductory-Finite-Elements/blob/master/notebooks/14_frame_elements.ipynb)
 
 
 ## Installation Instructions
